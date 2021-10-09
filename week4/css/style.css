@@ -14,15 +14,15 @@ header, footer {
 }
 
 h1, h2 {
-    font:#1a5e63;
+    color:#1a5e63;
 }
 
 p {
-    font:black
+    color:black
 }
 
 page {
-    max-width: width 960px;
+    max-width: 960px;
     margin: 0 auto; 
 }
 
