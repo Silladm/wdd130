@@ -1,6 +1,6 @@
 body {
     background-color:aqua;
-    font-size: 16px;
+    font-size: 24px;
     margin: 0;
     padding: 0;
 }
@@ -8,13 +8,17 @@ body {
 header, footer {
     background-color:#e3fffd;
     display: grid;
-    grid-template-columns: 200px 1fr;
+    grid-template-columns: 600px 1fr;
     align-items: center;
     justify-content: center;
 }
 
 h1, h2 {
     font:#1a5e63;
+}
+
+p {
+    font:black
 }
 
 page {
