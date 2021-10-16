@@ -1,68 +1,124 @@
 body {
-    color: black
-    font-size 14px;
+    color: black;
+    font-size: 14px;
+    font-family: "Open Sans","Arial", sans-serif;
     margin: 0;
     padding: 0;
 }
 
-page {
+.page {
     max-width: 960px;
     margin: 0 auto; 
 }
 
 header, footer {
-    /*background-color:#e3fffd;*/
-    display: grid;
-    grid-template-columns: 600px 1fr;
-    align-items: center;
-    justify-content: center;
-    
+    background-color:#e3fffd;
 }
-a href {
+
+a {
     text-decoration: none;
     color:#ed5c02;
 }
 
-header{
-    background-image: "../images/smiling_rafter_background.png";
-
+header {
+    max-width: 960px;
+    align-items:center;
 }
 
-
-nav{
+#logo {
+    margin: 0;
+    padding: 0 250px;
+    width: 460px;
+    display: flex;  
+    align-items: center;
+    justify-content: center;
+}
+    
+#navbar {
+    margin: 0;
     background-color:#e3fffd;
+    list-style: none;
+    color:#ed5c02; 
     
 }
 
  li{
-     padding-right:15px;
-     display: inline;
-     font-family: "Passion One Regular", "Arial", sans sans-serif;
+     padding-right:30px;
+     font-family: "Boogaloo", "Passion One Bold",sans sans-serif;
      font-size: 24px;
-     color:#ed5c02; 
      list-style: none;
+     text-decoration: none;
+     display: inline;
  }
- 
 
+ li a{
+     color:#ed5c02;
+     text-decoration: none;
+ }
+
+a hover {
+    color:#ffde59;
+}
+ 
 main{
-    background-color:aqua;
+    margin: 0;
+    max-width: 960;
+    background-color: #c2fffc;
+    align-items: grid;
 }
 
 h1, h2 {
-    color:#1a5e63;
-    font-family: "Passion One Regular", "Arial", sans-serif;
+  color: #007eb5;  
+  font-family: "Boogaloo", "Passion One Bold", sans-serif;
 }
+
 h1 {
+    font-size: 45px;
+}
+
+h2 {
     font-size: 32px;
 }
-h2 {
-    font-size: 24px;
+
+section box-1 {
+    max-width: 960px;
+    padding: 25px;
 }
 
-p {
-    font-family: "Open Sans","Arial", sans-serif;
-    
+.box-1 h2, p {
+    float: left;
+    width:60%;
+    box-sizing: border-box;
 }
 
+.box-1 img {
+    float: right;
+    width: 40%;
+    box-sizing: border-box;
+}
 
+.box-2 img {
+    float: left;
+    width: 40%;
+    box-sizing: border-box;
+}
 
+.box-2 h2, p {
+    float:right;
+    width: 60%;
+    box-sizing: border-box;
+}
+
+footer {
+  display: grid;
+}
+
+#business {
+    float: left;
+    display: inline;
+}
+
+#social {
+    float: right;
+    display: inline;
+}
