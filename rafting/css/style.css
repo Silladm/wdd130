@@ -2,6 +2,7 @@ body {
     color: black;
     font-size: 16px;
     font-family: "Open Sans","Arial", sans-serif;
+    line-height: 1.6em;
     margin: 0;
     padding: 10;
 }
@@ -96,6 +97,7 @@ section box-1 {
 }
 
 .box-1 img {
+    box-shadow: 10px 10px #597574;
     float: right;
     margin: 20px;
     width: 40%;
@@ -111,6 +113,7 @@ section box-2 {
 }
 
 .box-2 img {
+    box-shadow: 10px 10px #597574;
     float: left;
     margin: 20px;
     width: 40%;
@@ -124,7 +127,7 @@ section final-pitch {
 
 section final-pitch h2 {
     margin: 400px;
-    text-align: center;
+    align-items: center;
 }
 
 /*footer {
@@ -132,13 +135,11 @@ section final-pitch h2 {
 }*/
 
 #business {
-    width: 50%;
     text-align: left;
     display: inline;
 }
 
 #social {
-    width: 50%;
     float: right;
     display: inline;
 }
