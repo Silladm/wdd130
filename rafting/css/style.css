@@ -4,7 +4,7 @@ body {
     font-family: "Open Sans","Arial", sans-serif;
     line-height: 1.6em;
     margin: 0;
-    padding: 10;
+    padding: 10px;
 }
 
 .page {
@@ -62,9 +62,9 @@ a hover {
  
 main{
     margin: 0;
-    max-width: 960;
+    max-width: 960px;
     background-color: #c2fffc;
-    align-items: grid;
+    display: grid;
 }
 
 h1, h2 {
@@ -107,7 +107,7 @@ section box-1 {
 section box-2 {
     max-width: 960px;
     padding: 25px 25px 100px 25px;
-    margin: 100px 25 px;
+    margin: 100px 25px;
     text-align: right;
     box-sizing: border-box;
 }
@@ -121,7 +121,7 @@ section box-2 {
 }
 
 section final-pitch {
-    margin: 200 25 25 25;
+    margin: 200px 25px 25px 25px;
     text-align: left;
 }
 
