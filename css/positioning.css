@@ -130,38 +130,32 @@
   .blue4 {
     background-color: blue;
     grid-row: 1 / 4;
-        grid-column-start: 2;
+    grid-column-start: 2;
   }
   
   /* Activity 5 Styles */
   .content5 {
     /* Activity Five Container */
-    height: 525px;
-    display: flex;
-    flex-direction: column;
+    display: block;
+    /*flex-direction: column;*/
   }
   .red5 {
     background-color: red;
     height: 100px;
-    width: 100%;
-
   }
   .green5 {
     height: 200px;
     width: 200px;
     background-color: green;
-    align-self: float-left;
-  }
+    float: left;
+    margin-right: 10px;
+   }
   .yellow5 {
-    height: 300px;
-    width: 100%;
     background-color: gold;
-    padding: 20px;
-
+    padding: 10px;
   }
   .blue5 {
     height: 100px;
-    width: 100%;
     background-color: blue;
   }
   
@@ -175,8 +169,6 @@
     /* Activity Six Container */
   }
   .red6 {
-    /*width: 100px;
-    height: 100px;*/
     background-color: red;
     grid-row: 1 / 3;
     grid-column: 1 / 5;
