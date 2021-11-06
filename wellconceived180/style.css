@@ -1,0 +1,59 @@
+body {
+    background-color:#BCB9B4 opacity 50%;
+    width: 960px;
+    margin: 0;
+    padding: 0;
+}
+h1{
+    font-family: essays1743, Bookmania, serif;
+}
+h2, h3, h4{
+    font-family: open sans, arial, san serif;
+    font-weight: bold;
+    text-align: center;
+}
+header {
+    display: grid;
+    background-color: #C9E265;
+}
+.logo {
+    grid: 1 / 1;
+}
+nav {
+    grid-row: 1;
+    grid-column: 2 / 3;
+
+}
+nav li {
+    list-style: none;
+}
+h1 {
+    grid-row: 2;
+    width: 100%;
+}
+main {
+    width: 960px;
+    display: grid;
+    grid-template-columns: 450px 450px;
+    grid-gap: 60px;
+    
+}
+.purpose {
+    grid-row: 2;
+    grid-column: 1;
+}
+.audience {
+    grid-row: 2;
+    grid-column: 2;
+}
+.palette {
+    grid-row: 1;
+    grid-column: 1;
+}
+.typography {
+    grid-row: 1;
+    grid-column: 2;
+}
+.content {
+    grid-column: 1 / 3;
+}
