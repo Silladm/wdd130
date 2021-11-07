@@ -19,7 +19,8 @@ header {
     background-color: #C9E265;
 }
 .logo {
-    grid-area: 1 / 1;
+    grid-row: 1;
+    grid-column: 1;
 }
 nav {
     grid-row: 1;
