@@ -19,7 +19,7 @@ header {
     background-color: #C9E265;
 }
 .logo {
-    grid: 1 / 1;
+    grid-area: 1 / 1;
 }
 nav {
     grid-row: 1;
@@ -29,7 +29,6 @@ nav {
 nav li {
     list-style: none;
     font-family: open sans;
-    font-weight: regular;
 }
 h1 {
     grid-row: 2;
