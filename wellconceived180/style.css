@@ -2,28 +2,43 @@ body {
     width: 960px;
     margin: 0 auto;
     padding: 0;
-    background-color:#BCB9B4;
+    background-color:#2b2a26;
     box-sizing: border-box;
-
+    font-family: open sans, arial, san serif;
+    font-size: 12pt;
 }
 h1{
-    font-family: essays1743, Bookmania, serif;
+    font-family: essay text regular, Bookmania, serif;
+    font-weight: bold;
+    text-align: center;
+    color: #F8FFE5;
 }
 h2, h3, h4{
-    font-family: open sans, arial, san serif;
+    font-family: essay text regular, Bookmania, san serif;
     font-weight: bold;
     text-align: center;
 }
+
 header {
     display: grid;
-    background-color: #C9E265;
+    background-color: #c9e265;
+    
 }
 .logo {
     grid-row: 1;
     grid-column: 1;
 }
+.subtitle {
+    grid-row: 2 / 3;
+    grid-column: 1;
+    font-family: essays1743, bookmania, serif;
+    font-size: 15pt;
+    font-weight: bold;
+    text-align: left;
+    padding-left: 10px;
+}
 nav {
-    grid-row: 1;
+    grid-row: 1 / 5;
     grid-column: 3 / 4;
 
 }
@@ -31,21 +46,25 @@ nav li {
     list-style: none;
     font-family: open sans;
 }
+.nav_li_font {
+    font-family: open sans;
+    text-align: center;
+}
 h1 {
     grid-row: 2;
     grid-column: 1 / 4;
-    text-align: center;
 }
 main {
     margin-top: 20px;
     margin-bottom: 20px;
     width: 960px;
     display: grid;
-    grid-template-columns: 210px 210px 210px 210px;
+    grid-template-columns: 205px 205px 205px 205px;
     grid-gap: 30px;
-    padding: 15px;
-    background-color: lightgray;
+    padding: 35px;
+    background-color: #F8FFE5;
     box-sizing: border-box;
+    
 }
 .purpose {
     grid-row: 3;
