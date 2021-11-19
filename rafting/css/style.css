@@ -23,12 +23,15 @@ h2 {
     font-size: 32px; 
     text-align: center;
 }
-
 .invitation p {
     font-family: "Boogaloo", "Passion One Bold", sans-serif;
     font-size: 32px; 
     color:#ed5c02;
     text-align: center;
+}
+p {
+    font-family: "Calisto MT", san serif;
+    size: 20px; 
 }
 a {
     text-decoration: none;
@@ -80,15 +83,18 @@ a hover {
     margin-bottom: 15px;
 }
 .invitation {
-    position: absolute;
-    top: 15px;
-    right: 15px;
     background-color:aqua;
     border: 5px solid #ffde59;
     padding: 1.5rem;
     box-shadow: 5px 5px 3px #333;
     opacity: 75%;
 }
+.invitation {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
 .invitation h2 {
     color: #ed5c02;
 }
@@ -97,6 +103,15 @@ a hover {
     padding-left: 25px;
     display: grid;
     grid-gap: 40px;
+    background-color: #e3fffd;
+    box-sizing: border-box;
+}
+.river_trips {
+    display:grid;
+    align-items: center;
+    justify-items: center;
+    padding-right:15px;
+    padding-left: 25px;
     background-color: #e3fffd;
     box-sizing: border-box;
 }
@@ -129,4 +144,55 @@ footer {
     padding: 10px;
     align-items: center;
     justify-content: space-between;
+}
+.container_faq{
+    padding: 50px;
+    background-color: #e3fffd;
+    box-sizing: border-box;
+}
+.hidecontent {
+    display: none;
+}
+.faq_accordion label {
+    box-shadow: 5px 5px 3px #333;
+    width: 960px;
+    cursor: pointer;
+    background: #007eb5;
+    color: white;
+    font-family: "Boogaloo", "Passion One Bold", sans-serif;
+    font-size: 25px; 
+    text-align: center;
+}
+.faq_accordion label:hover {
+    background: #ed5c02;
+}
+.hidecontent {
+    width: 75%;
+    justify-content: center;
+    box-shadow: 5px 5px 3px #333;
+    background: #c2fffc;
+    /*padding: 10px 25px;*/
+    border: 2px #007eb5;
+    /*margin: -1 0 0 0;*/
+}
+.faq_accordion input:checkbox + label + .content_hidecontent {
+    display: block;
+    webkit-animation: fade_in 0.5s ease-out;
+    -moz-animation: fade_in 0.5s ease-out;
+    -o-animation: fade_in 0.5s ease-out;
+}
+@-webkit-keyframes fade_in {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+    1% {
+        display: block;
+        opacity: 0;
+    }
+    100% {
+        display: block;
+        opacity: 1;
+    }
+
 }
