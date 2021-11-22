@@ -115,6 +115,13 @@ a hover {
     background-color: #e3fffd;
     box-sizing: border-box;
 }
+.container_faq {
+    background-color: #e3fffd;
+    box-sizing: border-box;
+    padding-right:15px;
+    padding-left: 25px;
+    margin-bottom: 25px;
+}
 .box1 {
     grid-row: 2 / 3;
     grid-column: 1 / 2;
@@ -145,54 +152,58 @@ footer {
     align-items: center;
     justify-content: space-between;
 }
-.container_faq{
-    padding: 50px;
-    background-color: #e3fffd;
-    box-sizing: border-box;
+.rafting_video {
+    padding-top: 25px;
+
+}
+.faq_accordion {
+    max-width: 960px;
+    overflow: hidden;
+    padding: 25px;
+
+}
+label, .hidecontent{
+    padding: 14px 20px;
+}
+label{
+    display: block;
+    color: white;
+    background: #007eb5;
+    font-family: "Boogaloo", "Passion One Bold", sans-serif;
+    font-size: 24px; 
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    transition: background 0.1s;
+}
+label:hover{
+    background: rgba(0, 0, 0, 0.1);
+}
+label::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    right: 20px;
+    width: 12px;
+    height: 6px;
+    background-image:url('data:image/svg+xml;utf8,<svg width="100" height="50" xmlns="http://www.w3.org/2000/svg"><polygon points="0,0 100,0 50,50" style="fill:%23FFFFFF99;" /></svg>');
+    background-size: contain;
+    transition: transform 0.45;
 }
 .hidecontent {
     display: none;
+    background: #fff;
+    line-height: 1.6;
+    font-size: 0.85em;
 }
-.faq_accordion label {
-    box-shadow: 5px 5px 3px #333;
-    width: 960px;
-    cursor: pointer;
-    background: #007eb5;
-    color: white;
-    font-family: "Boogaloo", "Passion One Bold", sans-serif;
-    font-size: 25px; 
-    text-align: center;
+input {
+    display: none;
 }
-.faq_accordion label:hover {
-    background: #ed5c02;
-}
-.hidecontent {
-    width: 75%;
-    justify-content: center;
-    box-shadow: 5px 5px 3px #333;
-    background: #c2fffc;
-    /*padding: 10px 25px;*/
-    border: 2px #007eb5;
-    /*margin: -1 0 0 0;*/
-}
-.faq_accordion input:checkbox + label + .content_hidecontent {
+input:checked~.accordion_checked {
     display: block;
-    webkit-animation: fade_in 0.5s ease-out;
-    -moz-animation: fade_in 0.5s ease-out;
-    -o-animation: fade_in 0.5s ease-out;
 }
-@-webkit-keyframes fade_in {
-    0% {
-        display: none;
-        opacity: 0;
-    }
-    1% {
-        display: block;
-        opacity: 0;
-    }
-    100% {
-        display: block;
-        opacity: 1;
-    }
-
+input:checked~label::after{
+    transform: translateY(-50%) rotate (0.5turn);
 }
