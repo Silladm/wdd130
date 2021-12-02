@@ -50,5 +50,9 @@ button {
     padding: 10px 75px;
     border-radius: 10px;
     border:darkgray solid 1px;
+    background-color: lightgray;
+}
+a :hover {
+    background-color: darkgray;
 }
 
