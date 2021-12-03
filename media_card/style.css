@@ -1,12 +1,13 @@
 body {
     background: linear-gradient(to right, #8e9eab, #eef2f3);
-    height: 100vh;
-    
+    height: 100vh;    
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family:  "arial", "helvetica", sans-serif;
+    font-family:  "helvetica", "arial", sans-serif;
     letter-spacing: 0.03em;
+    line-height: 1.5em;
+    font-size: 12pt;
 }
 h1 {
     text-align:center;
@@ -37,22 +38,31 @@ main, footer {
     padding: 15px;
 }
 footer {
-    font-size: 10pt;
-    font-weight: bold;
-    font-variant-caps: all-petite-caps;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-button {
+footer p {
+    font-size: 11pt;
     font-weight: bold;
-    letter-spacing: 0.75px;
-    padding: 10px 75px;
-    border-radius: 10px;
-    border:darkgray solid 1px;
-    background-color: lightgray;
+    font-variant-caps: all-petite-caps;
 }
-a :hover {
+.not_a_button {
+    font-variant: none;
+    font-weight: bold;
+    font-size: 11pt;
+    color: black;
+    letter-spacing: 1px;
+    padding: 5px 75px;
+    border-radius: 10px;
+    border: 1px solid darkgray;
+
+    cursor: pointer;
+}
+a:link {
+    text-decoration: none;
+}
+.not_a_button:hover {
     background-color: darkgray;
 }
 
