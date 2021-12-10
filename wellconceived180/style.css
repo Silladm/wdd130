@@ -2,15 +2,14 @@ body {
     max-width: 100%;
     margin: 0;
     padding: 0;
-    /* background-color:#c9e265; */
+    background-color:#c9e265;
 
-    /* font-family: "open sans", "helvetica", san serif;
-    font-size: 12pt; */
+    /* font-family: "garamond", "open sans", "helvetica", san serif; */
+    font-size: 12pt;
     display: block;
 }
 main {
     max-width: 100%;
-    margin: 0;
     padding: 0;
     background-color:#c9e265;
 
@@ -35,11 +34,19 @@ header {
     margin: 0;
     padding: 0;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
     background-color:#c9e265;
-    position: fixed;
+    /* position: fixed; */
 } 
+hr {
+    margin: 0;
+    width: 100%;
+    background-color: #2b2a26;
+    height: 10px;
+    
+}
 footer {
     max-width: 100%;
     /* display: block; */
@@ -84,18 +91,26 @@ ul {
     font-weight: bold;
 }
 h1{
-    display:none;
-    font-family: essay text regular, Bookmania, serif;
+    font-family: "arvo", "arial rounded MT bold","palatino", essay text regular, Bookmania, serif;
     font-weight: bold;
     text-align: center;
-    color: #F8FFE5;
+    color: black;
+    /* color: #F8FFE5; */
 }
-h2, h3, h4{
-    font-family: "open sans", "helvetica", sans-serif;
+h2, h3 {
+    font-family: "arial rounded MT bold", "palatino", "open sans", "helvetica", sans-serif;
     font-weight: bold;
     text-align: center;
 }
-
+h4 {
+    font-family: "arvo";
+    font-weight: regular;
+    text-align: center;
+    font-size: 12pt;
+}
+p {
+    font-family: "helvetica", "arvo", "bookmania", serif;
+}
 .logo {
     flex-direction: float-left;
     width: 25%;
@@ -114,23 +129,35 @@ subtitle {
     font-size: 16pt;
     font-weight: bold;
     text-align: left;
-    /* padding-left: 10px; */
 }
-.heroimage {
+/* .subtitle_box {
+    background-color:#2b2a26;
+    padding: 10px;
+    width: 100%;
+    align-items: flex-end;
+    margin: 0;
+}
+subtitle {
+    color: white;
+    padding-left:50px;
+    font-family:  "arvo", "arial rounded MT bold", "garamond","palatino",serif;
+    font-size: 16pt;
+    text-align: left;
+} */
+/* .heroimage {
     display: hidden;
-}
+} */
 .mainnav {
-    display: flex;
+    display: inline-flex;
     align-items: flex-start;
     justify-content: flex-end;
-    margin-top: 15px;
+    /* margin-top: 15px; */
     max-width: 100%;
     list-style: none;
 }
 ul {
     align-items: center;
     padding-right: 175px;
-
 }
 li a {
 
@@ -138,7 +165,7 @@ li a {
     margin-right: 10px;
     text-decoration: none;
     color: black;
-    font-family: "open sans", "helvetica", sans-serif;
+    font-family: "arial rounded MT bold", "open sans", "helvetica", sans-serif;
     font-weight: bold;
     font-size: 16px;
 }
@@ -156,7 +183,7 @@ li a:active {
 }
 .about {
     max-width: 200px;
-    margin-top: 50px;
+    margin-top: 0;
     margin-right: 15%;
     margin-left: 40px;
     float: right;
