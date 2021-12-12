@@ -181,7 +181,8 @@ li a:hover {
     padding-bottom: 50px;
 }
 .collage {
-    box-shadow: 5px 5px 3px #1A5E63;
+    box-shadow: 
+     #1A5E63;
 }
 footer {
     display: flex;
