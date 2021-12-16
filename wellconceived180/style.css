@@ -21,6 +21,7 @@ hr {
     margin: 0;
     width: 100%;
     background-color: black;
+    border: none;
     height: 3px;
 }
 .logo {
@@ -130,7 +131,7 @@ label {
     font-family: "open sans", "arial", sans serif;
 }
 input {
-    font: "open sans", "arial" san serif;
+    font: san serif;
     width: 300px;
     padding: 3px;
     box-sizing: border-box;
