@@ -24,7 +24,7 @@ hr {
     height: 3px;
 }
 .logo {
-    flex-direction: float-left;
+    float: left;
     width: 25%;
 }
 .logo_img {
@@ -83,8 +83,8 @@ footer {
     padding-top: 15px;
     background-color: #c9e265;
     display: grid;
-    grid-template-rows: 2;
-    grid-template-columns: 3;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto auto;
     grid-gap: 10px;
     justify-items: center;
 }
@@ -130,7 +130,7 @@ label {
     font-family: "open sans", "arial", sans serif;
 }
 input {
-    font-family: "open sans", "arial" san serif;
+    font: "open sans", "arial" san serif;
     width: 300px;
     padding: 3px;
     box-sizing: border-box;
@@ -166,7 +166,7 @@ button {
 }
 #home_container {
     grid-template-columns: 100%;
-    grid-template-rows: 2;
+    grid-template-rows: auto auto;
     grid-gap: 30px;
     padding-top: 0;
     padding-right: 0;
@@ -181,8 +181,8 @@ button {
     padding-left: 7%;
 }
 #resources_container {
-    grid-template-rows: 3;
-    grid-template-columns: 3;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: auto auto auto;
     grid-gap: 10px;
     padding: 5% 5% 100px 5%;
     /* padding-right: 2%;
@@ -238,7 +238,6 @@ h2, h3 {
 }
 h4 {
     font-family: "arial rounded MT bold", "palatino", "open sans", sans serif;
-    font-weight: regular;
     text-align: center;
     font-size: 12pt;
 }
